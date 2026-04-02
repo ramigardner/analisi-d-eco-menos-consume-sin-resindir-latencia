@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="monospace">
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  <text x="400" y="40" text-anchor="middle" font-size="20" font-weight="bold">Corrección humana</text>
+
+  <!-- Puerta 1 -->
+  <rect x="250" y="70" width="300" height="60" rx="10" fill="#fff" stroke="#333" stroke-width="2"/>
+  <text x="400" y="95" text-anchor="middle" font-size="14" font-weight="bold">Puerta 1 — certificado MIT</text>
+  <text x="400" y="115" text-anchor="middle" font-size="12">Hash del archivo vs registro MIT</text>
+
+  <!-- Flecha NO -->
+  <line x1="550" y1="100" x2="650" y2="100" stroke="red" stroke-width="2"/>
+  <text x="600" y="90" text-anchor="middle" fill="red" font-weight="bold">NO</text>
+  <rect x="650" y="70" width="140" height="60" rx="10" fill="#ffe0e0" stroke="red" stroke-width="2"/>
+  <text x="720" y="95" text-anchor="middle" font-size="12">Pendrive bloqueado</text>
+  <text x="720" y="115" text-anchor="middle" font-size="12">Karma sin cambios</text>
+
+  <!-- Flecha SI -->
+  <line x1="400" y1="130" x2="400" y2="180" stroke="green" stroke-width="2"/>
+  <text x="410" y="160" fill="green" font-weight="bold">SÍ</text>
+
+  <!-- Puerta 2 -->
+  <rect x="250" y="180" width="300" height="70" rx="10" fill="#fff" stroke="#333" stroke-width="2"/>
+  <text x="400" y="205" text-anchor="middle" font-size="14" font-weight="bold">Puerta 2 — CorrectionVerifier</text>
+  <text x="400" y="225" text-anchor="middle" font-size="12">Ciclo previo + delta contexto + origen</text>
+
+  <!-- Flecha NO -->
+  <line x1="250" y1="215" x2="100" y2="215" stroke="red" stroke-width="2"/>
+  <text x="170" y="205" text-anchor="middle" fill="red">NO</text>
+  <rect x="10" y="185" width="90" height="60" rx="10" fill="#ffe0e0" stroke="red" stroke-width="2"/>
+  <text x="55" y="210" text-anchor="middle" font-size="12">Reintento</text>
+  <text x="55" y="230" text-anchor="middle" font-size="12">Corrección peso 0.0</text>
+
+  <!-- Flecha SI -->
+  <line x1="400" y1="250" x2="400" y2="300" stroke="green" stroke-width="2"/>
+  <text x="410" y="280" fill="green" font-weight="bold">SÍ</text>
+
+  <!-- Peso por origen -->
+  <rect x="250" y="300" width="300" height="60" rx="10" fill="#fff" stroke="#333" stroke-width="2"/>
+  <text x="400" y="325" text-anchor="middle" font-size="14" font-weight="bold">Peso por origen</text>
+  <text x="400" y="345" text-anchor="middle" font-size="12">Humano 1.0 · IA 0.5 · Sistema 0.2</text>
+
+  <line x1="400" y1="360" x2="400" y2="400" stroke="green" stroke-width="2"/>
+
+  <!-- Karma modificado -->
+  <rect x="250" y="400" width="300" height="60" rx="10" fill="#e0ffe0" stroke="green" stroke-width="2"/>
+  <text x="400" y="425" text-anchor="middle" font-size="14" font-weight="bold">Karma modificado</text>
+  <text x="400" y="445" text-anchor="middle" font-size="12">Corrección demostrada × 0.10</text>
+
+  <line x1="400" y1="460" x2="400" y2="500" stroke="#333" stroke-width="2"/>
+
+  <!-- Libro inmutable -->
+  <rect x="250" y="500" width="300" height="50" rx="10" fill="#f0f0f0" stroke="#333" stroke-width="2"/>
+  <text x="400" y="530" text-anchor="middle" font-size="14" font-weight="bold">Libro inmutable — hash encadenado</text>
+</svg>
